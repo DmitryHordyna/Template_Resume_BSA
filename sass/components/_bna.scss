@@ -1,0 +1,27 @@
+.binary {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: space-around;
+  }
+  padding: 10px;
+
+  .text {
+    @media screen and (max-width: 479px) {
+      margin-bottom: 3px;
+    }
+    color: map-get($colors, 'school');
+    font-size: 22px;
+  }
+  .link {
+    display: flex;
+
+    color: map-get($colors, 'school');
+    font-size: 22px;
+    img {
+      margin-right: 8px;
+    }
+  }
+  .link:hover {
+    color: map-get($colors, 'white');
+  }
+}

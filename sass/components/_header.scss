@@ -1,0 +1,65 @@
+.header {
+  .prewiev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+    margin-bottom: 160px;
+    padding: 0 15px;
+
+    @media screen and (min-width: 1200px) {
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url('../img/two_line.png'), url('../img/two_line.png');
+      background-size: 390px, 390px;
+      background-position: top 257px right -103px, top 285px left -108px;
+    }
+  }
+  .img {
+    @media screen and (max-width: 767px) {
+      width: 200px;
+      height: 200px;
+    }
+    // @media screen and (min-width: 768px) {
+    //   width: 400px;
+    //   height: 400px;
+    // }
+  }
+  .title {
+    color: map-get($colors, 'school');
+    font-weight: 700;
+    line-height: 1.4;
+
+    @media screen and (max-width: 767px) {
+      font-size: 23px;
+      letter-spacing: 0.02em;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 62px;
+      letter-spacing: 0.05em;
+    }
+    .span {
+      color: whitesmoke;
+    }
+  }
+  .text {
+    color: map-get($colors, 'form');
+    font-weight: 300;
+
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 32px;
+    }
+    .tex-span {
+      font-weight: 400;
+      color: map-get($colors, 'hair');
+    }
+  }
+}

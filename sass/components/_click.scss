@@ -1,0 +1,134 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  display: flex;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media screen and (max-width: 479px) {
+    max-width: 480px;
+    left: 50%;
+    width: 100%;
+    max-width: 609px;
+  }
+  @media screen and(min-width:480px) {
+    width: 450px;
+  }
+  @media screen and (max-width: 1199px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 528px;
+    height: 581px;
+  }
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: map-get($colors, 'white');
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border: 4px solid map-get($colors, 'school');
+}
+
+.btn-close {
+  width: 30px;
+  height: 30px;
+
+  background-color: map-get($colors, 'hair');
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn-close:hover {
+  background-color: map-get($colors, 'main');
+  color: map-get($colors, 'school');
+}
+
+.magic {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .magic-title {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .btn-hero {
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+
+    padding: 3px 15px 3px 15px;
+    color: white;
+    font-size: 12px;
+    line-height: 1.5;
+    border: 2px solid white;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: map-get($colors, 'hair');
+  }
+  .btn-hero:hover {
+    background-image: linear-gradient(
+      to right,
+      #e7484f,
+      #e7484f 16.65%,
+      #f68b1d 16.65%,
+      #f68b1d 33.3%,
+      #fced00 33.3%,
+      #fced00 49.95%,
+      #009e4f 49.95%,
+      #009e4f 66.6%,
+      #00aac3 66.6%,
+      #00aac3 83.25%,
+      #732982 83.25%,
+      #732982 100%,
+      #e7484f 100%
+    );
+    animation: slidebg 5s linear infinite;
+  }
+  @keyframes slidebg {
+    to {
+      background-position: 20vw;
+    }
+  }
+}
+
+.underground {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  .title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .text {
+    margin-bottom: 5px;
+  }
+  .imga {
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,216 @@
+.article_cv {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  margin-bottom: 50px;
+
+  background-color: map-get($colors, 'paper');
+  -webkit-box-shadow: 6px 5px 15px 0px rgba(0, 0, 0, 0.78);
+  box-shadow: 6px 5px 15px 0px rgba(0, 0, 0, 0.78);
+}
+.left_sidebar {
+  @media screen and (max-width: 767px) {
+    padding-top: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    min-width: 340px;
+    max-width: 350px;
+    border-right: 5px dashed map-get($colors, 'black');
+  }
+}
+
+.img_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 15px auto;
+  .img {
+    margin: 0 auto;
+
+    border-radius: 40%;
+  }
+}
+
+.box_descriptions {
+  text-align: center;
+  margin-bottom: 40px;
+  .name {
+    margin-bottom: 5px;
+
+    font-size: 35px;
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+  }
+  .profession {
+    margin-bottom: 10px;
+
+    color: #434343;
+
+    font-size: 28px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+  }
+  .about {
+    padding: 0 50px;
+
+    text-align: center;
+
+    font-size: 19px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    .span {
+      color: map-get($colors, 'hair');
+    }
+    .span:hover {
+      cursor: pointer;
+      color: map-get($colors, 'main');
+    }
+  }
+}
+
+.box_interests {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-bottom: 40px;
+
+  .title {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+  }
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    margin-left: 20px;
+    margin-top: 20px;
+    flex-basis: calc(100% / 3 - 20px);
+
+    cursor: pointer;
+    .icon {
+      fill: map-get($colors, 'main');
+    }
+    .icon:hover {
+      fill: map-get($colors, 'school');
+    }
+  }
+}
+
+.box_skills {
+  padding: 0 30px;
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 40px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.1;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px;
+  }
+  .div-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+
+    border: 3px groove map-get($colors, 'gray');
+    border-radius: 10px;
+    cursor: grab;
+  }
+  .long_box {
+    width: 100%;
+    max-width: 190px;
+    height: 20px;
+
+    padding: 1px;
+    margin-left: 30px;
+
+    border: 5px groove map-get($colors, 'black');
+    cursor: pointer;
+  }
+  .div-icon.one {
+    background-color: #9dadc3;
+  }
+  .two {
+    background-color: #ccae83;
+  }
+  .three {
+    background-color: #c395b1;
+  }
+  .four {
+    background-color: #b59cb9;
+  }
+  .five {
+    background-color: #ad888a;
+  }
+  .six {
+    background-color: #b0c5a2;
+  }
+  .how1 {
+    width: 98%;
+    height: 100%;
+
+    background-color: map-get($colors, 'main');
+  }
+  .how2 {
+    width: 90%;
+    height: 100%;
+
+    background-color: map-get($colors, 'main');
+  }
+  .how3 {
+    width: 90%;
+    height: 100%;
+
+    background-color: map-get($colors, 'main');
+  }
+  .how4 {
+    width: 85%;
+    height: 100%;
+
+    background-color: map-get($colors, 'main');
+  }
+  .how5 {
+    width: 90%;
+    height: 100%;
+
+    background-color: map-get($colors, 'main');
+  }
+  .how6 {
+    width: 70%;
+    height: 100%;
+
+    background-color: map-get($colors, 'main');
+  }
+  .div-icon:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
